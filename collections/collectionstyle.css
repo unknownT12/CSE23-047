@@ -1,0 +1,51 @@
+/* CSS styling */
+.genre-card {
+    background-color: #878b98;
+    color: white;
+    border-radius: 10px; /* Increased border-radius for a more rounded look */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Decreased transition duration for a snappier feel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box-shadow for a subtle elevation effect */
+    cursor: pointer; /* Added cursor style to indicate interactivity */
+}
+
+.genre-card:hover {
+    transform: scale(1.02); /* Decreased scale amount on hover */
+}
+
+.genre-card img {
+    width: 30%; /* Increased image width for better visibility */
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem; /* Centered and added margin for better spacing */
+}
+
+.genre-info {
+    padding: 1.5rem; /* Increased padding for better readability */
+    text-align: center; /* Centered text for better alignment */
+}
+
+.genre-info h2 {
+    font-size: 1.75rem; /* Increased font size for better visibility */
+    margin-bottom: 0.75rem;
+}
+
+.genre-info p {
+    font-size: 1.125rem; /* Increased font size for better readability */
+    margin-bottom: 1.5rem;
+}
+
+.genre-link {
+    font-weight: bold;
+    color: #dbeafe;
+    text-decoration: none;
+    display: inline-block; /* Added display property to apply padding */
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Added border-radius for a more polished look */
+    background-color: rgba(255, 255, 255, 0.1); /* Added background color for better visibility */
+    transition: background-color 0.2s ease; /* Added transition for a smooth effect */
+}
+
+.genre-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Darkened background color on hover */
+}

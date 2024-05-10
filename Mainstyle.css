@@ -1,0 +1,108 @@
+/* Body styles */
+
+body {
+  background-image: url("homepageimages/homebackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
+
+}
+.Top-Selling-Movie-list-header {
+  
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.Top-Selling-Movie-list-header h2 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+/* Container styles */
+.movie-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Movie item styles */
+.movie-item {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 120px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.movie-item img {
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.movie-item p {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 14px;
+  display: none; /* Hide description initially */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px; /* Adjust the positioning of the description */
+  width: 90%; /* Limit the width */
+  padding: 10px;
+  background-color: rgba(252, 246, 246, 0.8);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Container for movie titles */
+.movie-title-container {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: rgba(234, 219, 219, 0.8);
+  transition: background-color 0.3s, transform 0.3s;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Hover effect for movie titles */
+.movie-title-container:hover {
+  background-color: rgba(255, 221, 221, 0.6);
+  animation: scroll-over 3s infinite; /* Apply animation on hover */
+}
+
+@keyframes scroll-over {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Hover effect for movie images */
+.movie-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Hover effect for movie descriptions */
+.movie-item:hover p {
+  display: block; /* Show description on hover */
+}
+
+/* Adjust surrounding movie titles */
+.movie-item:hover {
+  transform: translateY(-10px);
+}

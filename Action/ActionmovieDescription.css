@@ -1,0 +1,50 @@
+/* Applies to Actionmovie1.html */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.rounded-image {
+    border-radius: 10px;
+    width: 270px; /* resized image width */
+    height: 400px; /* resized image height */
+    object-fit: cover;
+}
+
+.description-container {
+    width: 50%;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add-to-cart-button, .buy-now-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover, .buy-now-button:hover {
+    background-color: #0056b3;
+}

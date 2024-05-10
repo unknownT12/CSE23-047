@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.payment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.payment-form header {
+    text-align: center;
+}
+
+.payment-form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-form p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.payment-form fieldset {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.payment-form legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-form .form-group {
+    margin-bottom: 30px;
+}
+
+.payment-form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="email"],
+.payment-form input[type="number"],
+.payment-form input[type="password"],
+.payment-form select,
+.payment-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s ease;
+}
+
+.payment-form input[type="text"]:focus,
+.payment-form input[type="email"]:focus,
+.payment-form input[type="number"]:focus,
+.payment-form input[type="password"]:focus,
+.payment-form select:focus,
+.payment-form textarea:focus {
+    outline: none;
+    border-color: #6c757d;
+}
+
+.payment-form .form-check-input {
+    margin-right: 10px;
+}
+
+.payment-form .btn-primary {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-form .btn-primary:hover {
+    background-color: #0056b3;
+}
